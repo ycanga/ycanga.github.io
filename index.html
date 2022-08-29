@@ -5,6 +5,7 @@
     
 </head>
 <body>
+
 <div class="main-wrapper">
 <div class="signboard-wrapper">
 <div class="signboard">Bakımdayız</div>
@@ -27,6 +28,7 @@
 
 <style>
     @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
 html,
 body,
 .main-wrapper {
@@ -35,6 +37,7 @@ body,
   padding: 0;
   margin: 0;
 }
+
 .main-wrapper {
   font-size: 15vmin;
   background-color: #ffffff;
@@ -47,6 +50,7 @@ body,
   z-index: 999;
   position: fixed;
 }
+
 .aciklama {
   color: #ffffff;
   font-family: Montserrat, sans-serif;
@@ -63,12 +67,15 @@ body,
   bottom: 0;
   text-decoration: none;
 }
+
 .aciklama a {
   text-decoration: none;
   color: #ffffff;
   font-family: Montserrat, sans-serif;
   font-size: 3vmin;
 }
+
+
 .signboard-wrapper {
   width: 105vmin;
   height: 55vmin;
@@ -77,6 +84,7 @@ body,
   transform-origin: center 2.5vmin;
   animation: 1000ms init forwards, 1000ms init-sign-move ease-out 1000ms, 3000ms sign-move 2000ms infinite;
 }
+
 .signboard-wrapper .signboard {
   color: #ffffff;
   font-family: Montserrat, sans-serif;
@@ -92,6 +100,7 @@ body,
   border-radius: 4vmin;
   text-shadow: 0 -0.015em #be2b00;
 }
+
 .signboard-wrapper .string {
   width: 30vmin;
   height: 30vmin;
@@ -103,59 +112,74 @@ body,
   transform-origin: top left;
   transform: rotatez(45deg);
 }
+
 .signboard-wrapper .pin {
   width: 5vmin;
   height: 5vmin;
   position: absolute;
   border-radius: 50%;
 }
+
 .signboard-wrapper .pin.pin1 {
   background-color: #9f9f9f;
   top: 0;
   left: calc(50% - 2.5vmin);
 }
+
 .signboard-wrapper .pin.pin2,
 .signboard-wrapper .pin.pin3 {
   background-color: #d83000;
   top: 21.5vmin;
 }
+
 .signboard-wrapper .pin.pin2 {
   left: 13vmin;
 }
+
 .signboard-wrapper .pin.pin3 {
   right: 13vmin;
 }
+
 @keyframes init {
   0% {
     transform: scale(0);
   }
+
   40% {
     transform: scale(1.1);
   }
+
   60% {
     transform: scale(0.9);
   }
+
   80% {
     transform: scale(1.05);
   }
+
   100% {
     transform: scale(1);
   }
 }
+
 @keyframes init-sign-move {
   100% {
     transform: rotatez(3deg);
   }
 }
+
 @keyframes sign-move {
   0% {
     transform: rotatez(3deg);
   }
+
   50% {
     transform: rotatez(-3deg);
   }
+
   100% {
     transform: rotatez(3deg);
   }
 }
+
 </style>
