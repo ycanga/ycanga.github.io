@@ -1,0 +1,137 @@
+body, html{
+	height: 100%;
+	overflow:-moz-scrollbars-vertical; 
+	overflow-x:hidden; 
+}
+@font-face {
+	font-family: square;
+	src: url(../fonts/square-space/Square\ Space.ttf);
+  }
+@font-face {
+	font-family: space;
+	src: url(../fonts/space-racer/Space\ Racer.otf);
+  }
+.presskey img{
+	width: 35px;
+	margin-bottom: 5px;
+}
+
+.bgImg
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.keyDiv
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-width: max-content;
+	margin-bottom: .5em;
+}
+
+.keyImg
+{
+	border: 1px solid black;
+	margin-right: 1em;
+}
+
+.backgorundImage{
+	/* background-image: url(""); */
+	height: 120%;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+footer {
+	text-align: center;
+	padding: 5px;
+	background-color: rgba(46, 46, 46, 0.556);
+	color: rgb(0, 0, 0);
+	font-size: 14px;
+}
+p,h1,h3{
+	color: #000;
+}
+h1,h2,h3,h4{
+	font-family: space;
+}
+p{
+	font-family: square;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.renkli {
+	font-family: Consolas;
+	color:transparent;
+	font-size: 60pt;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 5pt;
+	padding: 10pt 0 10px 0;
+	background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5d4sEOKq18iQ5cpsWQYcI9hh0jEXijQZ-br7gBf45pJCWqg4n);
+	background-repeat: repeat-x; 
+	-webkit-background-clip: text;
+	animation: all 20s linear infinite;
+}
+
+.sourceBtn{
+	border: 5px solid black;
+	padding: .5em;
+	border-radius: .25em;
+	font-size: 20px;
+	color:rgb(255, 255, 255);
+	text-decoration: none;
+	transition: all .1s;
+	font-family: space;
+}
+
+.sourceBtn > a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.sourceBtn:hover
+{
+	border: 5px solid white;
+	background: black;
+}
+
+.sourceBtn:hover > a
+{
+	color: white;
+}
+
+@keyframes all{
+	0%{background-position: left 0px top 10px;}
+	100%{background-position: left 800px top 10px;}
+}
+.footer_color{
+	background: -webkit-linear-gradient(45deg, rgb(39, 39, 39),rgb(186, 70, 70),rgb(67, 111, 143));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.body_color{
+	
+	background: -webkit-linear-gradient(45deg, rgb(5 170 255),rgb(11 172 255),rgb(230 230 230));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.keypress_color{
+	
+	background: -webkit-linear-gradient(45deg, rgb(255 255 255),rgb(224 9 9),rgb(255 255 255));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
